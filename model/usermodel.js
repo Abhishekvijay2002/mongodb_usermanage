@@ -1,8 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
-// creating a schema
 const userscheme = mongoose.Schema({
-    // name:String,
     name: {
         type: String,
         required: true
@@ -17,6 +15,5 @@ const userscheme = mongoose.Schema({
     },
 
 });
-// creating a model
 const User = mongoose.model('User', userscheme);
  module.exports = User;
